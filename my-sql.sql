@@ -14,3 +14,10 @@ SELECT name, age,address, mob_numb
 FROM sq ;
 DROP TABLE NEW_MYSQ;       -- drop the table
 TRUNCATE TABLE NEW_MYSQ ; -- truncate/ remove all the data from table
+-- using alter table
+USE mysq;
+ALTER TABLE sq 
+-- ADD gender varchar(10);
+ADD dob varchar(20) ;
+-- DROP COLUMN gender;
+-- MODIFY COLUMN gender varchar(10) ;
