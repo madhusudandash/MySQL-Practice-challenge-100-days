@@ -8,7 +8,12 @@ age int ,
 address varchar(255),
 mob_numb varchar(15) 
 );
--- copy all table and makin another database
+
+ALTER TABLE sq 
+-- ADD PRIMARY KEY (mob_numb);
+DROP PRIMARY KEY ;
+
+-- copy all table and making another database
 CREATE TABLE NEW_MYSQ AS            
 SELECT name, age,address, mob_numb
 FROM sq ;
